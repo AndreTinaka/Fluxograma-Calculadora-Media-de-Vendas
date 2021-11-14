@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Andr&#233;"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-11-14 01:18:31 "/>
+        <attribute name="created" value="QW5kcsOpO0FORFLDiS1QQzsyMDIxLTExLTEzOyIxMjo0Mzo1MCAiOzI0ODk="/>
+        <attribute name="edited" value="QW5kcsOpO0FORFLDiS1QQzsyMDIxLTExLTE0OyIwMToxODozMSAiOzI7MjU5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Janeiro, Fevereiro, Mar&#231;o, media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o Valor em vendas dos meses abaixo:&quot;" newline="True"/>
+            <input variable="Janeiro"/>
+            <input variable="Fevereiro"/>
+            <input variable="Mar&#231;o"/>
+            <assign variable="media" expression="(Janeiro+Fevereiro+Mar&#231;o)/3"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;= 5000">
+                <then>
+                    <output expression="&quot;Parab&#233;ns, cumpriu a meta!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Vc falhou na meta.. Melhore&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
